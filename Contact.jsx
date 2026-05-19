@@ -12,7 +12,7 @@ function Contact() {
       <div className="absolute top-1/2 left-0 -translate-y-1/2 w-[500px] h-[500px] rounded-full bg-electric-600/20 blur-[140px] pointer-events-none"></div>
       <div className="absolute top-1/2 right-0 -translate-y-1/2 w-[500px] h-[500px] rounded-full bg-violet-600/20 blur-[140px] pointer-events-none"></div>
 
-      <div className="relative max-w-6xl mx-auto px-5 sm:px-8 grid lg:grid-cols-5 gap-12 lg:gap-16">
+      <div className="relative max-w-6xl mx-auto px-5 sm:px-8 grid grid-cols-1 lg:grid-cols-5 gap-8 sm:gap-12 lg:gap-16">
         <div className="reveal lg:col-span-2">
           <div className="font-display font-medium text-[11px] uppercase tracking-[0.32em] text-cyan-300 mb-5">/ Visit</div>
           <h2 className="font-display uppercase text-3xl sm:text-4xl font-bold tracking-[-0.005em] text-white leading-[1.05]">
@@ -59,41 +59,41 @@ function Contact() {
         </div>
 
         <div className="reveal lg:col-span-3" style={{transitionDelay: '0.1s'}}>
-          <div className="relative rounded-3xl border border-white/10 bg-gradient-to-br from-ink-800/80 to-ink-900/80 backdrop-blur p-6 sm:p-8 lg:p-10">
-            <div className="absolute -top-px left-12 right-12 h-px bg-gradient-to-r from-transparent via-violet-400/60 to-transparent"></div>
+          <div className="relative rounded-2xl sm:rounded-3xl border border-white/10 bg-gradient-to-br from-ink-800/80 to-ink-900/80 backdrop-blur p-5 sm:p-8 lg:p-10">
+            <div className="absolute -top-px left-6 right-6 sm:left-12 sm:right-12 h-px bg-gradient-to-r from-transparent via-violet-400/60 to-transparent"></div>
 
-            <div className="flex items-center justify-between mb-6 sm:mb-7">
-              <h3 className="text-xl sm:text-2xl font-medium text-white">Request your booking</h3>
-              <span className="font-mono text-[10px] tracking-widest text-white/40">FORM_01</span>
+            <div className="flex items-center justify-between mb-5 sm:mb-6 lg:mb-7">
+              <h3 className="text-lg sm:text-xl lg:text-2xl font-medium text-white">Request your booking</h3>
+              <span className="font-mono text-[9px] sm:text-[10px] tracking-widest text-white/40">FORM_01</span>
             </div>
 
-            <form onSubmit={submit} className="space-y-5">
+            <form onSubmit={submit} className="space-y-4 sm:space-y-5">
               <div>
-                <label className="block text-[10px] font-mono uppercase tracking-widest text-white/40 mb-2">Full name</label>
+                <label className="block text-[9px] sm:text-[10px] font-mono uppercase tracking-widest text-white/40 mb-2">Full name</label>
                 <input required value={form.name}
                   onChange={e => setForm({...form, name: e.target.value})}
                   placeholder="Alex Carter"
-                  className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3.5 text-white placeholder-white/30 focus:outline-none focus:border-violet-400/60 focus:bg-white/[0.07] transition"/>
+                  className="w-full bg-white/5 border border-white/10 rounded-lg sm:rounded-xl px-3 sm:px-4 py-2.5 sm:py-3.5 text-white placeholder-white/30 focus:outline-none focus:border-violet-400/60 focus:bg-white/[0.07] transition"/>
               </div>
               <div>
-                <label className="block text-[10px] font-mono uppercase tracking-widest text-white/40 mb-2">Email</label>
+                <label className="block text-[9px] sm:text-[10px] font-mono uppercase tracking-widest text-white/40 mb-2">Email</label>
                 <input required type="email" value={form.email}
                   onChange={e => setForm({...form, email: e.target.value})}
                   placeholder="alex@email.com"
-                  className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3.5 text-white placeholder-white/30 focus:outline-none focus:border-electric-400/60 focus:bg-white/[0.07] transition"/>
+                  className="w-full bg-white/5 border border-white/10 rounded-lg sm:rounded-xl px-3 sm:px-4 py-2.5 sm:py-3.5 text-white placeholder-white/30 focus:outline-none focus:border-electric-400/60 focus:bg-white/[0.07] transition"/>
               </div>
               <div>
-                <label className="block text-[10px] font-mono uppercase tracking-widest text-white/40 mb-2">Tell us your goals</label>
+                <label className="block text-[9px] sm:text-[10px] font-mono uppercase tracking-widest text-white/40 mb-2">Tell us your goals</label>
                 <textarea required rows="4" value={form.message}
                   onChange={e => setForm({...form, message: e.target.value})}
                   placeholder="I'd love to brighten my complexion and explore your Lumen RF protocol…"
-                  className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3.5 text-white placeholder-white/30 focus:outline-none focus:border-cyan-400/60 focus:bg-white/[0.07] transition resize-none"/>
+                  className="w-full bg-white/5 border border-white/10 rounded-lg sm:rounded-xl px-3 sm:px-4 py-2.5 sm:py-3.5 text-sm text-white placeholder-white/30 focus:outline-none focus:border-cyan-400/60 focus:bg-white/[0.07] transition resize-none"/>
               </div>
 
-              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 pt-2">
-                <p className="text-xs text-white/40 max-w-sm">By submitting, you agree to our concierge reaching out by phone or email within 2 hours.</p>
-                <button type="submit" className="btn-glow rounded-full px-7 py-3.5 text-sm font-medium text-white inline-flex items-center justify-center gap-2 whitespace-nowrap">
-                  {sent ? <><Icon.Check className="w-4 h-4"/> Booking received</> : <>Booking <Icon.Arrow className="w-4 h-4"/></>}
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-4 pt-1 sm:pt-2">
+                <p className="text-[11px] sm:text-xs text-white/40">By submitting, you agree to our concierge reaching out within 2 hours.</p>
+                <button type="submit" className="btn-glow rounded-full px-5 sm:px-7 py-3 sm:py-3.5 text-sm font-medium text-white inline-flex items-center justify-center gap-2 whitespace-nowrap">
+                  {sent ? <><Icon.Check className="w-4 h-4"/> Received</> : <>Booking <Icon.Arrow className="w-4 h-4"/></>}
                 </button>
               </div>
             </form>

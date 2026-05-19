@@ -20,7 +20,7 @@ function Features() {
       hue: 'from-electric-400 to-cyan-300' },
   ];
   return (
-    <section id="features" className="relative py-20 sm:py-28 lg:py-36">
+    <section id="features" className="relative py-20 sm:py-28 lg:py-36 overflow-hidden">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] rounded-full bg-violet-600/20 blur-[160px] pointer-events-none"></div>
       <div className="relative max-w-7xl mx-auto px-5 sm:px-8">
         <div className="reveal max-w-3xl">
@@ -33,18 +33,18 @@ function Features() {
           </p>
         </div>
 
-        <div className="mt-12 sm:mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
+        <div className="mt-10 sm:mt-12 lg:mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
           {features.map((f, i) => (
-            <div key={f.title} className="reveal glow-card rounded-2xl p-6 sm:p-7" style={{transitionDelay: `${i*0.07}s`}}>
-              <div className="flex items-start justify-between mb-7">
-                <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${f.hue} grid place-items-center text-white`}>
-                  <f.icon className="w-6 h-6"/>
+            <div key={f.title} className="reveal glow-card rounded-xl sm:rounded-2xl p-5 sm:p-6 lg:p-7" style={{transitionDelay: `${i*0.07}s`}}>
+              <div className="flex items-start justify-between mb-5 sm:mb-6 lg:mb-7">
+                <div className={`w-10 sm:w-12 h-10 sm:h-12 rounded-lg sm:rounded-xl bg-gradient-to-br ${f.hue} grid place-items-center text-white`}>
+                  <f.icon className="w-5 sm:w-6 h-5 sm:h-6"/>
                 </div>
-                <div className="font-mono text-[10px] tracking-widest text-white/30">{f.tag}</div>
+                <div className="font-mono text-[9px] sm:text-[10px] tracking-widest text-white/30">{f.tag}</div>
               </div>
-              <h3 className="text-xl font-medium text-white mb-2">{f.title}</h3>
-              <p className="text-sm text-white/55 leading-relaxed">{f.desc}</p>
-              <div className="mt-6 pt-5 border-t border-white/5 flex items-center justify-between text-xs">
+              <h3 className="text-lg sm:text-xl font-medium text-white mb-2">{f.title}</h3>
+              <p className="text-xs sm:text-sm text-white/55 leading-relaxed">{f.desc}</p>
+              <div className="mt-4 sm:mt-6 pt-4 sm:pt-5 border-t border-white/5 flex items-center justify-between text-[11px] sm:text-xs">
                 <span className="text-white/40 font-mono uppercase tracking-widest">Learn protocol</span>
                 <Icon.Arrow className="w-4 h-4 text-electric-300"/>
               </div>

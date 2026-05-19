@@ -4,31 +4,31 @@ function HeroVisual() {
       <div className="absolute -top-10 -left-10 w-40 h-40 rounded-full bg-gradient-to-br from-electric-500 to-violet-600 blur-3xl opacity-50 orb-float"></div>
       <div className="absolute -bottom-10 -right-6 w-48 h-48 rounded-full bg-gradient-to-br from-cyan-400 to-electric-500 blur-3xl opacity-40 orb-float" style={{animationDelay: '-3s'}}></div>
 
-      <div className="relative device-glow rounded-[28px] overflow-hidden bg-gradient-to-br from-ink-800/80 to-ink-900/80 border border-white/10 backdrop-blur">
-        <div className="flex items-center justify-between px-5 py-3 border-b border-white/5">
-          <div className="flex items-center gap-1.5">
-            <span className="w-2 h-2 rounded-full bg-white/20"></span>
-            <span className="w-2 h-2 rounded-full bg-white/20"></span>
-            <span className="w-2 h-2 rounded-full bg-electric-400 pulse-glow"></span>
+      <div className="relative device-glow rounded-[16px] sm:rounded-[24px] lg:rounded-[28px] overflow-hidden bg-gradient-to-br from-ink-800/80 to-ink-900/80 border border-white/10 backdrop-blur">
+        <div className="flex items-center justify-between px-3 sm:px-5 py-2 sm:py-3 border-b border-white/5">
+          <div className="flex items-center gap-1">
+            <span className="w-1.5 h-1.5 rounded-full bg-white/20"></span>
+            <span className="w-1.5 h-1.5 rounded-full bg-white/20"></span>
+            <span className="w-1.5 h-1.5 rounded-full bg-electric-400 pulse-glow"></span>
           </div>
-          <div className="font-mono text-[10px] tracking-widest text-white/40">SESSION_07 · LIVE</div>
-          <div className="font-mono text-[10px] text-electric-300">●REC</div>
+          <div className="font-mono text-[8px] sm:text-[10px] tracking-widest text-white/40">SESSION_07 · LIVE</div>
+          <div className="font-mono text-[8px] sm:text-[10px] text-electric-300">●REC</div>
         </div>
 
-        <div className="p-4 sm:p-6 lg:p-8 grid grid-cols-5 gap-3 sm:gap-4">
-          <div className="col-span-2 space-y-2.5 sm:space-y-3">
-            <div className="text-[9px] sm:text-[10px] font-mono uppercase tracking-widest text-white/40">Client</div>
-            <div className="text-white text-base sm:text-lg">Mara K.</div>
+        <div className="p-3 sm:p-4 lg:p-8 grid grid-cols-1 sm:grid-cols-5 gap-2 sm:gap-3 lg:gap-4">
+          <div className="sm:col-span-2 space-y-2 sm:space-y-2.5 lg:space-y-3">
+            <div className="text-[8px] sm:text-[9px] lg:text-[10px] font-mono uppercase tracking-widest text-white/40">Client</div>
+            <div className="text-white text-sm sm:text-base lg:text-lg">Mara K.</div>
             <div className="h-px bg-white/10"></div>
-            <div className="text-[9px] sm:text-[10px] font-mono uppercase tracking-widest text-white/40">Protocol</div>
-            <div className="text-white text-xs sm:text-sm leading-tight">Lumen RF<br/>+ Hydrafacial</div>
+            <div className="text-[8px] sm:text-[9px] lg:text-[10px] font-mono uppercase tracking-widest text-white/40">Protocol</div>
+            <div className="text-white text-[11px] sm:text-xs lg:text-sm leading-tight">Lumen RF<br/>+ Hydrafacial</div>
             <div className="h-px bg-white/10"></div>
-            <div className="text-[9px] sm:text-[10px] font-mono uppercase tracking-widest text-white/40">Practitioner</div>
-            <div className="text-white text-xs sm:text-sm">Dr. Lena Voss</div>
+            <div className="text-[8px] sm:text-[9px] lg:text-[10px] font-mono uppercase tracking-widest text-white/40">Practitioner</div>
+            <div className="text-white text-[11px] sm:text-xs lg:text-sm">Dr. Lena Voss</div>
           </div>
 
-          <div className="col-span-3 relative">
-            <div className="aspect-square rounded-2xl bg-gradient-to-br from-ink-900 to-ink-950 border border-white/5 relative overflow-hidden">
+          <div className="sm:col-span-3 relative">
+            <div className="aspect-square rounded-lg sm:rounded-xl lg:rounded-2xl bg-gradient-to-br from-ink-900 to-ink-950 border border-white/5 relative overflow-hidden">
               {[1,2,3,4,5].map(i => (
                 <div key={i}
                   className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full border border-electric-400/30"
@@ -39,29 +39,30 @@ function HeroVisual() {
                   }}
                 />
               ))}
-              <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-gradient-to-br from-electric-400 via-violet-500 to-cyan-400 blur-sm"></div>
-              <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-white"></div>
-              <div className="absolute top-3 left-3 font-mono text-[9px] text-white/40 tracking-widest">↗ 432nm</div>
-              <div className="absolute bottom-3 right-3 font-mono text-[9px] text-electric-300 tracking-widest">98.2% ABSORB</div>
+              <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 rounded-full bg-gradient-to-br from-electric-400 via-violet-500 to-cyan-400 blur-sm"></div>
+              <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 rounded-full bg-white"></div>
+              <div className="absolute top-2 left-2 font-mono text-[7px] sm:text-[8px] lg:text-[9px] text-white/40 tracking-widest">↗ 432nm</div>
+              <div className="absolute bottom-2 right-2 font-mono text-[7px] sm:text-[8px] lg:text-[9px] text-electric-300 tracking-widest">98.2%</div>
             </div>
 
-            <div className="mt-3 sm:mt-4 grid grid-cols-3 gap-1.5 sm:gap-2">
+            <div className="mt-2 sm:mt-3 lg:mt-4 grid grid-cols-3 gap-1 sm:gap-1.5 lg:gap-2">
               {[['HYDRA', '+34%'], ['ELAST', '+22%'], ['LUMIN', '+41%']].map(([k, v]) => (
-                <div key={k} className="rounded-lg bg-white/5 border border-white/5 px-1.5 sm:px-2 py-1 sm:py-1.5">
-                  <div className="text-[7px] sm:text-[8px] font-mono tracking-widest text-white/40">{k}</div>
-                  <div className="text-electric-300 text-xs sm:text-sm font-medium">{v}</div>
+                <div key={k} className="rounded-lg bg-white/5 border border-white/5 px-1 sm:px-1.5 lg:px-2 py-0.5 sm:py-1 lg:py-1.5">
+                  <div className="text-[6px] sm:text-[7px] lg:text-[8px] font-mono tracking-widest text-white/40">{k}</div>
+                  <div className="text-electric-300 text-[10px] sm:text-xs lg:text-sm font-medium">{v}</div>
                 </div>
               ))}
             </div>
           </div>
         </div>
 
-        <div className="px-6 py-3 border-t border-white/5 flex items-center justify-between">
-          <div className="flex items-center gap-2 text-[10px] font-mono text-white/40">
-            <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 pulse-glow"></span>
-            BIOMETRIC SYNC ACTIVE
+        <div className="px-3 sm:px-6 py-2 sm:py-3 border-t border-white/5 flex items-center justify-between">
+          <div className="flex items-center gap-1.5 sm:gap-2 text-[8px] sm:text-[10px] font-mono text-white/40">
+            <span className="w-1 h-1 sm:w-1.5 sm:h-1.5 rounded-full bg-emerald-400 pulse-glow"></span>
+            <span className="hidden xs:inline">BIOMETRIC SYNC ACTIVE</span>
+            <span className="xs:hidden">SYNC ACTIVE</span>
           </div>
-          <div className="text-[10px] font-mono text-white/40">00:42:18</div>
+          <div className="text-[8px] sm:text-[10px] font-mono text-white/40">00:42:18</div>
         </div>
       </div>
 
