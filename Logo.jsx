@@ -7,9 +7,9 @@ function Logo() {
         </div>
         <div className="absolute inset-0 rounded-lg blur-md bg-gradient-to-br from-electric-500 to-violet-500 opacity-60 -z-10 group-hover:opacity-90 transition"></div>
       </div>
-      <div className="leading-tight hidden xs:block">
-        <div className="font-display text-[12px] sm:text-[14px] font-bold tracking-[0.05em] text-white">APEX <span className="text-electric-300">ALPHA</span></div>
-        <div className="font-display font-medium text-[7px] sm:text-[8px] uppercase tracking-[0.32em] text-white/55 mt-0.5">LUXE MEDSPA</div>
+      <div className="leading-tight">
+        <div className="font-display text-[11px] sm:text-[14px] font-bold tracking-[0.05em] text-white">APEX <span className="text-electric-300">ALPHA</span></div>
+        <div className="font-display font-medium text-[6px] sm:text-[8px] uppercase tracking-[0.32em] text-white/55 mt-0.5">LUXE MEDSPA</div>
       </div>
     </a>
   );
