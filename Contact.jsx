@@ -8,7 +8,7 @@ function Contact() {
     setTimeout(() => { setSent(false); setForm({ name:'', email:'', message:''}); }, 3200);
   };
   return (
-    <section id="contact" className="relative py-28 sm:py-36 overflow-hidden">
+    <section id="contact" className="relative py-20 sm:py-28 lg:py-36 overflow-hidden">
       <div className="absolute top-1/2 left-0 -translate-y-1/2 w-[500px] h-[500px] rounded-full bg-electric-600/20 blur-[140px] pointer-events-none"></div>
       <div className="absolute top-1/2 right-0 -translate-y-1/2 w-[500px] h-[500px] rounded-full bg-violet-600/20 blur-[140px] pointer-events-none"></div>
 
@@ -59,11 +59,11 @@ function Contact() {
         </div>
 
         <div className="reveal lg:col-span-3" style={{transitionDelay: '0.1s'}}>
-          <div className="relative rounded-3xl border border-white/10 bg-gradient-to-br from-ink-800/80 to-ink-900/80 backdrop-blur p-7 sm:p-10">
+          <div className="relative rounded-3xl border border-white/10 bg-gradient-to-br from-ink-800/80 to-ink-900/80 backdrop-blur p-6 sm:p-8 lg:p-10">
             <div className="absolute -top-px left-12 right-12 h-px bg-gradient-to-r from-transparent via-violet-400/60 to-transparent"></div>
 
-            <div className="flex items-center justify-between mb-7">
-              <h3 className="text-2xl font-medium text-white">Request your booking</h3>
+            <div className="flex items-center justify-between mb-6 sm:mb-7">
+              <h3 className="text-xl sm:text-2xl font-medium text-white">Request your booking</h3>
               <span className="font-mono text-[10px] tracking-widest text-white/40">FORM_01</span>
             </div>
 

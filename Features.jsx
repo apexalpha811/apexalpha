@@ -20,7 +20,7 @@ function Features() {
       hue: 'from-electric-400 to-cyan-300' },
   ];
   return (
-    <section id="features" className="relative py-28 sm:py-36">
+    <section id="features" className="relative py-20 sm:py-28 lg:py-36">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] rounded-full bg-violet-600/20 blur-[160px] pointer-events-none"></div>
       <div className="relative max-w-7xl mx-auto px-5 sm:px-8">
         <div className="reveal max-w-3xl">
@@ -33,9 +33,9 @@ function Features() {
           </p>
         </div>
 
-        <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="mt-12 sm:mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
           {features.map((f, i) => (
-            <div key={f.title} className="reveal glow-card rounded-2xl p-7" style={{transitionDelay: `${i*0.07}s`}}>
+            <div key={f.title} className="reveal glow-card rounded-2xl p-6 sm:p-7" style={{transitionDelay: `${i*0.07}s`}}>
               <div className="flex items-start justify-between mb-7">
                 <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${f.hue} grid place-items-center text-white`}>
                   <f.icon className="w-6 h-6"/>

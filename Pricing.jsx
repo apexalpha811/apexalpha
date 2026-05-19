@@ -14,10 +14,10 @@ function Pricing() {
       cta: 'Request invite', featured: false },
   ];
   return (
-    <section id="pricing" className="relative py-28 sm:py-36">
+    <section id="pricing" className="relative py-20 sm:py-28 lg:py-36">
       <div className="absolute inset-0 grid-bg opacity-50 pointer-events-none"></div>
       <div className="relative max-w-7xl mx-auto px-5 sm:px-8">
-        <div className="reveal text-center max-w-2xl mx-auto mb-16">
+        <div className="reveal text-center max-w-2xl mx-auto mb-12 sm:mb-16">
           <div className="font-display font-medium text-[11px] uppercase tracking-[0.32em] text-violet-400 mb-5">/ Membership</div>
           <h2 className="font-display uppercase text-3xl sm:text-4xl lg:text-5xl font-bold tracking-[-0.005em] text-white leading-[1.05]">
             Pricing built for <span className="font-serif italic font-normal normal-case tracking-normal gradient-text">long-term radiance.</span>
@@ -29,7 +29,7 @@ function Pricing() {
           {tiers.map((t, i) => (
             <div
               key={t.name}
-              className={`reveal relative rounded-3xl p-8 sm:p-9 ${
+              className={`reveal relative rounded-3xl p-6 sm:p-8 lg:p-9 ${
                 t.featured
                   ? 'bg-gradient-to-br from-electric-600/30 via-violet-600/20 to-cyan-500/20 border border-violet-400/40'
                   : 'bg-ink-800/40 border border-white/8'
@@ -52,7 +52,7 @@ function Pricing() {
 
               <div className="flex items-end gap-2 mb-3">
                 <span className="text-[11px] font-mono text-white/40 mb-2">$</span>
-                <span className={`text-6xl font-semibold tracking-tight ${t.featured ? 'gradient-text' : 'text-white'}`}>{t.price}</span>
+                <span className={`text-5xl sm:text-6xl font-semibold tracking-tight ${t.featured ? 'gradient-text' : 'text-white'}`}>{t.price}</span>
                 <span className="text-sm text-white/40 mb-3">{t.cadence}</span>
               </div>
 
